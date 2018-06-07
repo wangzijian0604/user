@@ -12,7 +12,10 @@ if (!mysql_query($sql,$con))
   die('Error: ' . mysql_error());
   }
 echo "<script>alert('留言成功');parent.location.href='show_message.php'</script>";
-
+   < tr >
+                < td >作者</ td >
+                < td > < input  type = “ text ”  name = “ author ”  id = “ author ” /> </ td >
+            </ tr >
 
 mysql_close($con)
 ?>
